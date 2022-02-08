@@ -1,0 +1,85 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.form {
+    /* width: 600px !important;*/
+    padding: 20px 30px;
+    margin: 0 auto;
+    height: fit-content;
+    background-color: #fff !important;
+    box-shadow: 0 4px 8px 0px rgba(34, 34, 34, 0.3) !important;
+    border-radius: 10px;
+}
+
+
+/*=============REGISTER================*/
+
+.form-group {
+    box-shadow: 0 4px 8px 0px rgba(34, 34, 34, 0.3) !important;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.form-group input {
+    border: none !important;
+}
+
+.panel {
+    max-width: 600px;
+    background-color: #fff !important;
+    border: 1px solid gray;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0px rgba(34, 34, 34, 0.3) !important;
+}
+
+.register-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: darkcyan;
+}
+
+
+/*===========LOGIN===========*/
+
+.login-container {
+    height: 100vh !important;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-color: darkcyan;
+}
+
+.form-floating {
+    box-shadow: 0 4px 8px 0px rgba(34, 34, 34, 0.3) !important;
+    border-radius: 5px;
+}
+
+
+/*======BLOGs page===*/
+
+i {
+    font-size: 50px;
+}
+
+.card {
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0px rgba(34, 34, 34, 0.3) !important;
+}
+
+.card-body {
+    height: 7rem;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+/*============Product ==============*/
