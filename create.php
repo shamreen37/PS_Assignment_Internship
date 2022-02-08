@@ -17,13 +17,14 @@
         include("common.php");
        
         ?>
-    <div class="container mt-5">
-        <div class="text-center">
-            <h2>Create a new Blog</h2>
+    <div class="container-fluid create-container">
+      <div class="inner-create-container py-4">
+      <div class="text-center">
+            <h1>Create a new Blog</h1>
         </div>
-        <form action="includes/blog-add.php" method="POST">
-        <input type="text" placeholder="Blog Title" name="title" class="form-control bg-dark text-white my-3 text-center">
-        <textarea name="content" class="form-control bg-dark text-white my-3" id="" cols="30" rows="10" placeholder="Blog content"></textarea>
+        <form action="includes/blog-add.php" method="POST" class="mt-5">
+        <input type="text" placeholder="Blog Title" name="title" class="form-control  my-3 text-center">
+        <textarea name="content" class="form-control my-3" id="" cols="30" rows="10" placeholder="Blog content"></textarea>
 
             
         <div class="col-12 mt-3 text-center">
@@ -33,6 +34,7 @@
             
             </a>      
            
+      </div>
     </div>
     </form>
 

@@ -29,9 +29,10 @@
         ?>
 
 
-        <div class="container">
+        <div class="container-fluid blog-container">
+            <div class="inner-container">
             <div class="text-center">
-                <a href="create.php" class="btn btn-dark mt-5 mb-3"> Create a new blog</a>
+                <a href="create.php" class="btn btn-dark mt-5 mb-3"> &#43; Create a new blog</a>
             </div>
 
             <div class="row">
@@ -51,6 +52,7 @@
     <?php } ?>
 
 
+            </div>
             </div>
 
         </div>

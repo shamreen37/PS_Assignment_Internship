@@ -13,11 +13,7 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <style>
-        .container {
-            max-width: 800px;
-        }
-    </style>
+    
 </head>
 
 <body>
@@ -31,8 +27,9 @@ if(isset($_REQUEST['id'])){
     } ?>
 
 
-    <div class="container py-4 m-auto">
-        <?php  foreach($select_query_result as $q) { ?>
+    <div class="container-fluid view-container py-4">
+       <div class="inner-view-container">
+       <?php  foreach($select_query_result as $q) { ?>
         <h2> <?php echo $q['title']; ?> </h2>
         <p>by  <?php echo $q['author']; ?> </p>
         <hr>
@@ -49,6 +46,8 @@ if(isset($_REQUEST['id'])){
 
         <hr>
         <p class="text-center">Copyright &copy; All Rights Reserved.</p>
+           
+       </div>
     </div>
 
 
