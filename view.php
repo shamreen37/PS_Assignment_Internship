@@ -39,11 +39,13 @@ if(isset($_REQUEST['id'])){
         <?php echo $q['content']; ?>
         </p>
 
+        
         <hr>
 
 
         <i class="far fa-thumbs-up" id="like-btn"></i><span id="like-txt"> <?php echo $q['likes']; ?>   Likes</span>
         <?php }?>
+        <a href="blog.php" class="right">Read More Blogs</a>
         <hr>
         <p class="text-center">Copyright &copy; All Rights Reserved.</p>
            

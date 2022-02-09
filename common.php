@@ -1,8 +1,8 @@
 <?php
 //For Development
-$con= mysqli_connect("localhost","root","","internship")
+//$con= mysqli_connect("localhost","root","","internship");
 
-//$con= mysqli_connect("remotemysql.com","IUQ8DZ1ksO","3HFAXtlYBM","IUQ8DZ1ksO")
+$con= mysqli_connect("sql6.freesqldatabase.com","sql6471568","IlJFbZNpmV","sql6471568")
 
 or die(mysqli_error($con));
 if(!isset($_SESSION)){

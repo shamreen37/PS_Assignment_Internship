@@ -21,7 +21,7 @@
 <i class="fa-solid fa-circle-exclamation"></i>
     <h2>Your payment is failed   </h2>
 <p>Your payment is failed due to some technical error. Please try again.</p>
-    <a href="payment-form.php" class="btn btn-dark text-center m-1">Retry</a> <a href="payment-form.php" class="btn btn-outline-dark text-center m-1">Back to Home</a>
+    <a href="payment-form.php" class="btn btn-dark text-center m-1">Retry</a> <a href="product.php" class="btn btn-outline-dark text-center m-1">Back to Home</a>
 </div>
 </div>
 

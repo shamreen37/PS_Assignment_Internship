@@ -66,6 +66,7 @@ body {
 
 .blog-container {
     background-color: darkcyan;
+    min-height: 100vh;
 }
 
 .blog-container .inner-container {
@@ -88,7 +89,8 @@ i {
 }
 
 .right i {
-    font-size: 25px !important;
+    font-size: 20px !important;
+    color: crimson;
 }
 
 .card {
@@ -100,7 +102,7 @@ i {
 .card-body {
     height: 7rem;
     margin: 0;
-    padding: 0;
+    padding: 0 !important;
     overflow: hidden;
 }
 
@@ -184,4 +186,32 @@ i {
 .fa-circle-check {
     color: rgb(1, 163, 1);
     font-size: 50px;
+}
+
+
+/*===========CART ==================*/
+
+.cart-container {
+    background-color: darkcyan;
+    min-height: 100vh;
+}
+
+table {
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.main {
+    width: 90vw;
+    margin: auto;
+    margin-top: 0 !important;
+    padding: 0px 20px;
+}
+
+
+/*===========Payment=========*/
+
+.payment-container {
+    background-color: darkcyan;
+    min-height: 100vh;
 }

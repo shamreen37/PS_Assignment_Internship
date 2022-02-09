@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 
@@ -33,9 +33,11 @@
         <div class="container-fluid blog-container">
             <div class="inner-container">
             <div class="text-center">
-                <a href="create.php" class="btn btn-dark mt-5 mb-3"> &#43; Create a new blog</a>
+                <h2 class="pt-4 mb-3 text-white">Latest Articles</h2>
+               
+                <a href="create.php" class="btn btn-dark mb-3"> &#43; Create a new blog</a>
             </div>
-
+          
             <div class="row">
 <?php    
       foreach($select_query_result as $s){ ?>
@@ -45,15 +47,16 @@
     <div class="card-body">
         <p class="card-text"> <?php echo $s['content'] ?> </p>  
     </div>  
-    <p class="left"> by <?php echo $s['author'] ?> 
+    <p class="left text-success"> by <?php echo $s['author'] ?> 
      <a href="includes/blog-delete.php?id=<?php echo $s['blog_id']; ?> ">
          <span class="right"><i class="fa-solid fa-trash-can"></i></span> </a>  </p>  
     <a href="view.php?id=<?php echo $s['blog_id']; ?> " class="btn btn-dark">Read More <span class="text-dark">&rarr;</span> </a>  
 </div>
 </div>
 
-    <?php } ?>
 
+    <?php } ?>
+    <a href="product.php" class="text-white m-4 btn btn-outline-dark">Back to Products page</a>
 
             </div>
             </div>

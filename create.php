@@ -28,13 +28,14 @@
 
             
         <div class="col-12 mt-3 text-center">
-                    <button class="btn btn-dark" type="submit" value="Submit">Add Post</button>
+                    <button class="btn btn-dark" type="submit" value="Submit">Add Post</button>  <a href="product.php" class="text-white m-4 btn btn-outline-dark">Back to Products page</a>
                 </div>
 
             
             </a>      
            
       </div>
+     
     </div>
     </form>
 

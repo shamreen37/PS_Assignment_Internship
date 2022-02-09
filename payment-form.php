@@ -14,11 +14,13 @@
 
 <body>
 
-   <div class="container-fluid login-container">
+   <div class="container-fluid payment-container py-2">
    
-   <div class="form mt-3 col-12 col-md-6">
+   <div class="form  col-12 col-md-6">
     <form method="POST" action="pay.php">
-        <h1 class="mb-4 mt-3">Payment  Gateway</h1>
+        <h1 class="mb-4">Payment  Gateway</h1>
+        <h3> Total amount: <?php echo $_REQUEST['amt']; ?>/- </h3>
+        <h2 class="text-danger">Please note that this payment gateway is in test mode. So no amount will be deducted.</h2>
         <div class="form-floating mb-3">
             <input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
             
@@ -36,7 +38,7 @@
     </div>
 
         <div class="form-floating mb-3">
-        <input type="text" class="form-control " id="floatingAmount"  name="price" placeholder="Amount"    required>
+        <input type="text" class="form-control " id="floatingAmount"  name="price" placeholder="Amount"  required>
         <label for="floatingAmount">Amount</label>
     </div>
 

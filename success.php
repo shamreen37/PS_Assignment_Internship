@@ -22,7 +22,7 @@
 
     <h2>Your payment is successfull!</h2>
     <p>Shop more with us!</p>
-    <a href="payment-form.php" class="btn btn-dark text-center">Back to Home!</a>
+    <a href="product.php" class="btn btn-dark text-center">Back to Home!</a>
 </div>
 </div>
 
