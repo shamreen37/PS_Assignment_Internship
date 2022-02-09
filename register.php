@@ -6,12 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <!--JS-->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+   
 </head>
 
 <body>
@@ -29,23 +27,23 @@
 
 <form method="POST" action="register_submit.php">
     <div class="form-group mb-3">
-        <input type="text" class="form-control " name="name" placeholder="Name">
+        <input type="text" class="form-control " name="name" placeholder="Name" required>
     </div>
 
     <div class="form-group mb-3">
-        <input type="text" class="form-control " name="email" placeholder="Email" >
+        <input type="email" class="form-control " name="email" placeholder="Email" >
     </div>
 
     <div class="form-group mb-3">
-        <input type="text" class="form-control " name="contact" placeholder="Contact Number">
+        <input type="text" class="form-control " name="contact" placeholder="Contact Number" maxlength="10" title="ten digits mobile number required." required>
     </div>
 
     <div class="form-group mb-3">
-        <input type="text" class="form-control" name="address" placeholder="Address">
+        <input type="text" class="form-control" name="address" placeholder="Address" required>
     </div>
 
     <div class="form-group mb-3">
-<input type="password" class="form-control" name="password" id="inputPassword4" placeholder="Password">
+<input type="password" class="form-control" name="password" id="inputPassword4" placeholder="Password" required>
 </div>
 
     <div class="ms-2 mb-3">
@@ -56,8 +54,19 @@
 
 
     <div class="form-group mb-3">
-        <input type="text" class="form-control " name="linkedin" placeholder="Linkedin profile">
+        <input type="text" class="form-control " name="linkedin" placeholder="Linkedin profile" required>
     </div>
+
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+        Agree to terms and conditions
+      </label>
+      <div class="invalid-feedback">
+        You must agree before submitting.
+      </div>
+    </div>
+
 
     <div class="col-12 mt-3">
         <button class="btn btn-primary" type="submit" value="Submit">Submit</button>
@@ -70,7 +79,9 @@
 </div>
 </div>
 
-       
+   <!--JS-->
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>     
 
 </body>
 

@@ -75,7 +75,20 @@ body {
 }
 
 i {
-    font-size: 50px;
+    font-size: 40px;
+}
+
+.left {
+    width: 100%;
+}
+
+.right {
+    text-align: right;
+    float: right;
+}
+
+.right i {
+    font-size: 25px !important;
 }
 
 .card {
@@ -142,4 +155,33 @@ i {
 .inner-create-container {
     max-width: 900px;
     margin: auto;
+}
+
+
+/*========== Success page========*/
+
+.success-container {
+    background-color: darkcyan;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.panel-div {
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0px rgba(34, 34, 34, 0.3) !important;
+    height: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.fa-circle-exclamation {
+    color: crimson;
+    font-size: 50px;
+}
+
+.fa-circle-check {
+    color: rgb(1, 163, 1);
+    font-size: 50px;
 }

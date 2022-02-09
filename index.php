@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
   
@@ -20,11 +20,12 @@
     <form method="POST" action="login_submit.php">
         <h1 class="mb-4 mt-3">Login System</h1>
         <div class="form-floating mb-3">
-            <input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+            
             <label for="floatingInput">Email address</label>
         </div>
         <div class="form-floating mb-3">
-            <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password" required>
             <label for="floatingPassword">Password</label>
         </div>
 

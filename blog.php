@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <style>
 
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
 
 </head>
 
@@ -44,8 +45,10 @@
     <div class="card-body">
         <p class="card-text"> <?php echo $s['content'] ?> </p>  
     </div>  
-    <p class="text-primary"> by <?php echo $s['author'] ?>  </p>
-    <a href="view.php?id=<?php echo $s['blog_id']; ?> " class="btn btn-dark">Read More <span class="text-dark">&rarr;</span> </a>
+    <p class="left"> by <?php echo $s['author'] ?> 
+     <a href="includes/blog-delete.php?id=<?php echo $s['blog_id']; ?> ">
+         <span class="right"><i class="fa-solid fa-trash-can"></i></span> </a>  </p>  
+    <a href="view.php?id=<?php echo $s['blog_id']; ?> " class="btn btn-dark">Read More <span class="text-dark">&rarr;</span> </a>  
 </div>
 </div>
 
